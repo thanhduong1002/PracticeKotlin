@@ -19,15 +19,15 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        arrMainCategory.add(Recipes(1, "Leo"))
-        arrMainCategory.add(Recipes(2, "Lionel"))
-        arrMainCategory.add(Recipes(3, "Lionel Adres"))
+        arrMainCategory.add(Recipes(1, "Leo", R.drawable.real_madrid_2_3_barcelona_2017))
+        arrMainCategory.add(Recipes(2, "Lionel", R.drawable.leo_messi))
+        arrMainCategory.add(Recipes(3, "Lionel Adres", R.drawable.messi_ucl))
 
         mainCategoryAdapter.setData(arrMainCategory)
 
-        arrSubCategory.add(Recipes(1, "Leo Messi"))
-        arrSubCategory.add(Recipes(1, "Lionel Messi"))
-        arrSubCategory.add(Recipes(1, "Lionel Adres Messi"))
+        arrSubCategory.add(Recipes(1, "Leo Messi", R.drawable.messi))
+        arrSubCategory.add(Recipes(2, "Lionel Messi", R.drawable.pin_on_barca))
+        arrSubCategory.add(Recipes(3, "Lionel Adres Messi", R.drawable.wallpaper_lionel_messi))
 
         subCategoryAdapter.setData(arrSubCategory)
 

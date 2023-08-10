@@ -3,6 +3,7 @@ package com.example.recipeapp.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recipeapp.R
@@ -12,6 +13,7 @@ class MainCategoryAdapter: RecyclerView.Adapter<MainCategoryAdapter.RecipeViewHo
     var arrMainCategory = ArrayList<Recipes>()
     class RecipeViewHolder(view: View): RecyclerView.ViewHolder(view){
         val dishNameText: TextView = view.findViewById<TextView>(R.id.dish_name)
+        val dishImage: ImageView = view.findViewById(R.id.img_messi)
     }
     fun setData(arrData: List<Recipes>){
         arrMainCategory = arrData as ArrayList<Recipes>
@@ -26,5 +28,6 @@ class MainCategoryAdapter: RecyclerView.Adapter<MainCategoryAdapter.RecipeViewHo
 
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
         holder.dishNameText.text = arrMainCategory[position].dishName
+        holder.dishImage.setImageResource(arrMainCategory[position].imageRecipe)
     }
 }

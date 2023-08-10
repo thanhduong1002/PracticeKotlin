@@ -17,6 +17,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:id="@+id/img_Category"
                 android:layout_height="240dp"
                 android:src="@drawable/leo_messi"
                 app:layout_constraintTop_toTopOf="parent"
